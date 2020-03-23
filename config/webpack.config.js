@@ -608,7 +608,7 @@ module.exports = function (webpackEnv) {
       // the HTML & assets that are part of the webpack build.
 
       new WorkboxWebpackPlugin.GenerateSW({
-        cleanupOutdatedCaches: true,
+        // cleanupOutdatedCaches: true,
         clientsClaim: true,
         exclude: [/\.map$/, /asset-manifest\.json$/],
         importWorkboxFrom: 'cdn',
