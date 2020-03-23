@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>P4B OFFLINE CACHING....ok.</h1>
+        <h1>P4B OFFLINE CACHING...</h1>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
