@@ -18,22 +18,12 @@ export default class TikTacToe extends React.PureComponent {
     winner: false
   }
 
-  backupState = { ...this.state }
-
   resetIt = () => {
-    this.setState(this.backupState)
-    this.boxArr = [];
+    window.location.reload();
   }
 
   back = () => {
     window.history.back()
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.canModified && this.state.canModified === '') {
-      this.boxArr = ['0', '1', '2'];
-      this.forceUpdate();
-    }
   }
 
   setFilledValue = (id, value) => {
