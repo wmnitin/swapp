@@ -2,6 +2,7 @@ import React from 'react';
 import s from './index.module.scss';
 import Box from './Box';
 import { checkWinner } from './winner';
+import MoveToHome from '../shared/MoveToHome';
 
 export default class TikTacToe extends React.PureComponent {
 
@@ -20,10 +21,6 @@ export default class TikTacToe extends React.PureComponent {
 
   resetIt = () => {
     window.location.reload();
-  }
-
-  back = () => {
-    window.history.back()
   }
 
   setFilledValue = (id, value) => {
@@ -77,7 +74,7 @@ export default class TikTacToe extends React.PureComponent {
       </div>
       <button className={s.reset} onClick={this.resetIt}>RESET</button>
       {this.state.winner && <h2>Winner is {this.state.winner}</h2>}
-      <button className={s.back} onClick={this.back}>Back to Home</button>
+      <MoveToHome />
     </div >
   }
 }

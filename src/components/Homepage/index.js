@@ -8,9 +8,10 @@ export default class Homepage extends React.PureComponent {
 
   render() {
     return <div className={s.container}>
-      <h2>Homepage</h2>
+      <h2>Select Games to play</h2>
       <ul>
         <li><Link to='/tiktactoe'>Tic Tak Toe</Link></li>
+        <li><Link to='/twozerofoureight'>2048</Link></li>
       </ul>
     </div>
   }

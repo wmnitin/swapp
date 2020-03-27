@@ -1,5 +1,7 @@
 import React from 'react';
 import Routes from './routes/Routes';
+import 'hammerjs/hammer';
+
 import './App.css';
 
 function App() {
